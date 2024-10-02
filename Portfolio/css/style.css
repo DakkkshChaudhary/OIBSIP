@@ -1,0 +1,372 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fcf9f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+.header {
+    background-color: #3a3a3b;
+    filter: grayscale(50%);
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item a {
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+    border-radius: 5px;
+}
+
+
+/* Section styles */
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #0a192f;
+    margin-bottom: 80px;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto ;
+    padding: 20vb;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+}
+
+.home-title {
+    font-size: 3rem;
+    color: #0a192f;
+}
+
+.home-name {
+    color: #3f16f5;
+}
+
+.home-contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #64ffda;
+    color: #0a192f;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.home-contact-btn:hover {
+    background-color: #0a192f;
+    color: #fff;
+}
+
+.home-social a {
+    font-size: 4vw;
+    color: var(--black);
+    margin-right: 10px;
+}
+
+.home-social a:hover {
+    color: #3f16f5;
+}
+
+.home-img {
+    width: 300px;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35%; 
+    box-shadow: 10px 10px 15px rgba(24, 23, 23, 0.952); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    filter: grayscale(40%);
+}
+
+.home-img img:hover{
+    filter: grayscale(5%);
+    transform: scale(1.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-img img {
+    max-width: 300px;
+    border-radius: 35px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #3f16f5;
+}
+
+.about-description {
+    max-width: 600px;
+    margin: 20px 0;
+    color: #666;
+}
+
+.about-content p{
+    font-size: 1.5rem;
+    color: #356296;
+}
+
+
+/* Skills Section */
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: linear-gradient(rgba(177, 169, 169, 0.5), rgba(10, 10, 10, 0.5)),url(./pexels-jeshoots-238118.jpg) no-repeat center center/cover;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+.skill-icon i {
+    font-size: 2.25rem;
+    margin-left: 5vb;
+    color: #ffc164;
+}
+
+.skill-icon span {
+    font-weight: bold;
+    color: #0a192f;
+    margin: 5vb;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vb;
+}
+
+.skill-percentage{
+    color: rgb(14, 13, 13);
+    margin-right: 100vb;
+}
+
+.skill-title{
+    margin-left: 5vb;
+    padding-bottom: 10px;
+}
+
+
+/* GitHub Section */
+#github {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.github-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.github-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.github-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0a192f;
+}
+
+.github-text p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.github-text a {
+    display: inline-block;
+    background-color: #0a192f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.github-text a i {
+    margin-left: 10px;
+}
+
+.github-text a:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+.github-image {
+    flex: 1;
+    text-align: center;
+}
+
+.github-image img {
+    width: 60%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.github-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 3%;
+    background: linear-gradient(rgba(177, 169, 169, 0.5), rgba(10, 10, 10, 0.5)),url(./pexels-jeshoots-238118.jpg) no-repeat center center/cover;
+    
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.form-button {
+    width: 7vw;
+    height: 7vh;
+    background-color: #64ffda;
+    color: #0a192f;
+    border-radius: 15px;
+    margin-left: auto;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-button:hover {
+    background-color: #2d67bd;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background-color: #0a192f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-social a {
+    font-size: 24px;
+    color: #64ffda;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-love {
+    margin-top: 10px;
+}
+
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}

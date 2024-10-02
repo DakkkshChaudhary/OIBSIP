@@ -1,0 +1,149 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(171, 155, 155, 0.6), rgba(16, 16, 16, 0.6)), url('./images/future.jpg') no-repeat center center fixed;
+    filter: grayscale(30%);
+    /* opacity: 10; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease-in-out, filter 0.6s ease-in-out;
+    overflow: hidden;
+    background-size: cover;
+}
+
+body:hover {
+    transform: scale(1.02);
+    filter: grayscale(30%);
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(247, 242, 242, 0.209);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    display: grid;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+h1 i, p i, button i {
+    margin-right: 8px;
+}
+
+button i {
+    margin-left: 5px;
+}
+
+i {
+    font-size: 18px;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container input, #unitInput{
+    border-radius: 15px;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+/* Button hover with ripple effect */
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: width 0.6s ease, height 0.6s ease, opacity 1s;
+}
+
+button:active::after {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+
+.output {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input, select, button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}
